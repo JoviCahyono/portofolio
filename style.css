@@ -1,0 +1,141 @@
+/* Default styles for larger screens */
+.bgimage {
+    height: 100vh;
+    background: url('images/banner.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.navbar-nav {
+    font-size: 20px;
+}
+
+.navbar-nav a {
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbarDark {
+    background-color: rgb(21, 21, 21);
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #e4e4e4; /* Change this color to your desired hover color */
+}
+
+.hero_title {
+    font-size: 4.5rem;
+}
+
+.hero_desc {
+    font-size: 2rem;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.imageAboutPage {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#footer {
+    background-color: #808080;
+    text-align: center;
+}
+
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover,
+.fa-twitch:hover {
+    color: #008000;
+}
+
+.fab {
+    color: #000000;
+}
+
+#footer {
+    background-color: #808080;
+    text-align: center;
+}
+
+#about,
+#services,
+#portfolio,
+#contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+
+#contact {
+    padding-bottom: 4rem;
+}
+
+#sidebar {
+    background-color: transparent;
+    box-shadow: none;
+    height: 100%;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .bgimage {
+        height: auto;
+    }
+
+    .navbar-nav {
+        font-size: 16px;
+    }
+
+    .hero_title {
+        font-size: 3.5rem;
+    }
+
+    .hero_desc {
+        font-size: 1.5rem;
+    }
+
+    #about,
+    #services,
+    #portfolio,
+    #contact {
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+
+    #contact {
+        padding-bottom: 2rem;
+    }
+    
+    .navbar-toggler {
+        display: block; /* Ensure the toggle button is visible */
+    }
+
+    .navbar-collapse {
+        display: none; /* Hide the navbar links by default on smaller screens */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack the links vertically */
+        text-align: center; /* Center-align the links */
+        width: 100%; /* Full width for better display */
+        margin-top: 10px; /* Add some spacing at the top */
+    }
+
+    .navbar-nav.show {
+        display: flex; /* Show the links when the toggle button is clicked */
+    }
+}
